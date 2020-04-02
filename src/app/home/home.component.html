@@ -1,0 +1,20 @@
+<div class="search-box">
+	<div class="input-group ">
+		<div class="input-group-prepend">
+			<span class="input-group-text" id="inputGroup-sizing-default">Search Products</span>
+		</div>
+		<!-- <input type="text" class="form-control"> -->
+		<input [(ngModel)]="searchText" type="text" class="form-control" >
+  </div>
+		<!-- <div class="col-md-4">
+			<div>
+				<select class="form-control"  [(ngModel)] = "sortOption">
+        <option value="product_name|asc">Sort By Name </option>
+        <option value="product_price|lth">Sort By Price </option>
+      </select>
+			</div>
+		</div> -->
+	</div>
+
+
+	<app-product-list [searchText]="searchText"></app-product-list>

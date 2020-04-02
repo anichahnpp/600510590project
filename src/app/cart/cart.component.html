@@ -1,0 +1,29 @@
+<h2>MY SHOPPING CART</h2>
+
+  <div class="row">
+    <div *ngFor = 'let cart of (cartList | async)' class="col-3">
+      <div class="card" style="width: 100%;">
+      <img src="{{cart.img}}" class="card-img-top" alt="{{cart.name}}">
+      <div class="card-body">
+        <h5 class="card-title text-center">{{cart.name}}</h5>
+        <p class="card-text text-center"><small>Price: {{cart.price}} THB</small></p>
+        <button (click)="onDeleteCart(cart.id,cart.name)"  class="btn btn-primary container">Delete to Cart</button>
+      </div>
+      </div> 
+    </div>
+	</div>
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

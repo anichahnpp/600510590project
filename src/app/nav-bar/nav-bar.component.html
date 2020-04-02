@@ -1,0 +1,21 @@
+<div class="nav">
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://sv1.picz.in.th/images/2020/03/18/Q1GN0I.png"border="0" class="logo mr-2"/>
+	<div class="nav-item left-side">
+		<button class="nav-link " routerLink="">Home</button>
+    <button class="nav-link " routerLink="/cart" *ngIf="auth.isLoggedIn">ShoppingCart</button>
+	</div>
+	<div class="nav-item">
+		<button class="nav-link" routerLink="/login" *ngIf="!auth.isLoggedIn">Login</button>
+	</div>
+
+	<div class="nav-item">
+		<button (click)="onLogout()" type="button" class="nav-link" routerLink="/login" *ngIf="auth.isLoggedIn">Logout</button>
+	</div>
+	<div class="nav-item">
+		<button class="nav-link" routerLink="/register" *ngIf="!auth.isLoggedIn">Register</button>
+	</div>
+</div>
+<div class="content">
+	<router-outlet></router-outlet>
+  <!-- <app-home></app-home> -->
+</div>

@@ -1,0 +1,10 @@
+<div class="con">
+	<h3>Register</h3>
+
+	<div class="form-group">
+	<input [(ngModel)]="email" class="form-control m-1" type="email" placeholder="Email">
+    <input [(ngModel)]="password"class="form-control m-1" type="password" placeholder="Password">
+    <input [(ngModel)]="confirmpassword" class="form-control m-1" type="password" placeholder="Comfirm password">
+      </div>
+				<button (click)="onRegister()" class="m-1" type="submit">Register</button>
+			</div>

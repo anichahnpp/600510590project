@@ -1,0 +1,29 @@
+.search-box{
+  display: flex;
+  max-width: 1000px;
+  justify-content: center;
+  margin: 1rem auto;
+}
+.input-group-text{
+  background-color: #ff5555;
+  color: #ffffff;
+  
+}
+.form-control{
+  background-color: #ffaaaa;
+  color: #ffffff;
+  
+}
+
+.col-md-4{
+  background-color: #ffffff;
+
+}
+
+  .table td {
+    vertical-align : unset;
+    font-size:14px;
+  }
+  .w30{
+    width: 35%;
+  }
